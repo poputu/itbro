@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>join army</title>
+</head>
+<body>
+    <form id="join-form" name="join-form" action="/" method="POST">
+        <fieldset>
+            <legend>П.І.П.</legend>
+            Ім'я<br>
+            <input type="text" name="fname" placeholder="Ім'я" required><br>
+            Прізвище<br>
+            <input type="text" name="lname" placeholder="Прізвище" required><br>
+            День народнення<br>
+            <input type="date" name="birthday" placeholder="День народнення" required><br>
+            Стать<br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Чоловіча</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Жіноча</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Інше</label><br>
+
+            <label for="yourfile">Файл</label><br>
+            <input type="file" name="yourfile" id="yourfile"><br>
+        </fieldset>
+        <fieldset>
+            <legend>
+                Контактні данні
+            </legend>
+            <label for="youremail">Електронна пошта</label><br>
+            <input type="email" id="youremail"><br>
+            <label for="tel">Телефон</label><br>
+            <input type="tel" name="tel" id="tel" placeholder="0987654321"><br>
+
+        </label>
+        <input type="submit" value="Надіслати">
+        <input type="reset" value="Скинути">
+
+
+
+
+    </form>
+</body>
+</html>

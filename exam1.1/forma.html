@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма для отримання земельної ділянки</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Головна сторінка</a>
+            <a href="table.html">Мапа ділянок</a>
+            <a href="list.html">Список власників</a>
+            <a href="forma.html">Заповнити заявку</a>
+            <a href="сopyright.html">Копірайт</a>
+        </nav>
+    </header>
+    <main>
+        <h1>
+            Форма для отримання земельної ділянки
+        </h1>
+        <p>
+            Заповніть форму для отримання земельної ділянки
+        </p>
+        <div class="forma" style="margin: 10px 0px 10px 0px;">
+            <form action="table.html" method="POST">
+                <label for="yourname">Прізвище, ім'я, побатькові</label><br>
+                <input type="text" name="yourname" id="yourname" placeholder="П.І.П."><br>
+                <label for="tel">Телефон</label><br>
+                <input type="tel" name="tel" id="tel" placeholder="0987654321"><br>
+                <label for="field">Номер участка</label><br>
+                <input type="number" name="field" id="field" min="1" max="38" step="1" placeholder="1"><br>
+                <label for="photoubd">Фото вашого УБД</label><br>
+                <input type="file" name="photoubd" id="photoubd"><br>
+                <br>
+                <input type="submit" name="submit" value="відправити">
+            </form>
+        </div>
+    </main>
+    <footer>
+        &copy; Copyright <a href="сopyright.html">Держкадастр</a> 2020 Це не правда <br>
+        &mumap; <a href="https://twitter.com/Mrpoputu">Розробник</a>
+    </footer>
+</body>
+
+</html>

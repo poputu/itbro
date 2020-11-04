@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Євробляха кожному ветерану</title>
+</head>
+
+<body>
+    <header>
+        <h1>
+            Пільгове розмитнення євроблях
+        </h1>
+        <p>
+            Якщо Ви маєте право, заповніть форму, приведену нижче, для отримання пільгового розмитнення авто.
+        </p>
+    </header>
+    <main>
+        <form action="wetdream.html" method="POST">
+            <label for="">Оберіть тип, марку  авто та країну-імпортер:</label>
+            <br>
+            <select name="car-type" id="car-type">
+                <option value="">Тип авто</option>
+                <option value="car">Легкова</option>
+                <option value="mbus">Мікроавтобус</option>
+                <option value="motorcycle">Мотоцикл</option>
+                <option value="bus">Автобус</option>
+                <option value="truck">Вантажне авто</option>
+                <option value="president">Велосипед</option>
+            </select>
+            <select name="car-mark" id="car-mark">
+                <option value="">Марка авто</option>
+                <option value="BMW">BMW</option>
+                <option value="Audi">Audi</option>
+                <option value="Bentley">Bentley</option>
+                <option value="Bugatti">Bugatti</option>
+                <option value="Aston">Aston Martin</option>
+                <option value="Lada">Lada</option>
+            </select>
+            <select name="country" id="country">
+                <option value="">Країна імпортер</option>
+                <option value="Poland">Польща</option>
+                <option value="Hungary">Венгрія</option>
+                <option value="Albania">Албанія</option>
+                <option value="France">Франція</option>
+                <option value="Canada">Канада</option>
+                <option value="Deutschland">Німеччина</option>
+                <option value="Japan">Японія</option>
+            </select>
+            <br>
+            <label for="yourname">Прізвище, ім'я, побатькові</label><br>
+            <input type="text" name="yourname" id="yourname" placeholder="П.І.П."><br>
+            <label for="tel">Телефон</label><br>
+            <input type="tel" name="tel" id="tel" placeholder="0987654321"><br>
+            <label for="ubd">номер УБД</label><br>
+            <input type="text" name="ubd" id="ubd" placeholder="3343434" ><br>
+            <br>
+            Чи Ви вже користувалися правом пільгового розмитнення?
+            <br>
+            <input type="radio" name="virgin" id="notvirgin" value="notvirgin">
+            <label for="notvirgin">Вже розмитнював</label>
+            <input type="radio" name="virgin" id="virgin" value="virgin">
+            <label for="virgin">Розмитнюю вперше</label>
+            <br>
+            <input type="submit" name="submit" value="відправити">
+        </form>
+    </main>
+</body>
+
+</html>
