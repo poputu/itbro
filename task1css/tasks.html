@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання на день</title>
+</head>
+
+<body>
+    <header>
+        <h1 align="center">
+            Завдання на день
+        </h1>
+    </header>
+    <main>
+        <div>
+            <form name="tasks" id="tasks" action="/" method="POST">
+                <fieldset>
+                    <legend>
+                        Ранок
+                    </legend>
+                    Перевірка пошти<br>
+                    <input type="checkbox" name="check-email" id="check-email">
+                    <label for="check-email">Перевірка пошти</label><br>
+                    Почистити зуби<br>
+                    <input type="checkbox" name="check-mouth" id="check-mouth">
+                    <label for="check-mouth">Почистити зуби</label><br>
+                    Навчитися чомусь новому<br>
+                    <input type="checkbox" name="check-study-new" id="check-study-new">
+                    <label for="check-study-new">Навчитися чомусь новому</label><br>
+                    </fieldset>
+                <fieldset>
+                    <legend>
+                        Обід
+                    </legend>
+                    Подзвонити коханій<br>
+                    <input type="checkbox" name="check-love-call" id="check-love-call">
+                    <label for="check-love-call">Подзвонити коханій</label><br>
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        Вечір
+                    </legend>
+                    Навчання<br>
+                    <input type="checkbox" name="check-study" id="check-study">
+                    <label for="check-study">Навчання</label><br>
+                    Проявити любов<br>
+                    <input type="checkbox" name="check-love" id="check-love">
+                    <label for="check-love">Проявити любов</label><br>
+                </fieldset>
+                <input type="submit" value="Відправити">
+                <input type="reset">
+
+            </form>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>

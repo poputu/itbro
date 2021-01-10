@@ -1,0 +1,72 @@
+h1 {
+  color: red;
+}
+
+.tree a {
+  display: inline-block;
+  text-decoration: none;
+
+  position: relative;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 4px;
+  margin: 4px;
+}
+
+.tree ul {
+  position: relative;
+  padding: 16px 0px;
+  white-space: nowrap;
+  margin: auto;
+  text-align: center;
+}
+.tree ul::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.tree li {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  list-style-type: none;
+  position: relative;
+  padding: 16px;
+}
+.tree li::before,
+.tree li::after {
+  content: "";
+  position: absolute;
+  border-top: 1px solid black;
+  top: 0px;
+  right: 50%;
+  width: 50%;
+  height: 1em;
+}
+.tree li::after {
+  right: auto;
+  left: 50%;
+  border-left: 1px solid black;
+}
+li:only-child::after,
+li:only-child::before {
+  display: none; /* прибирає стрілки в нікуди, переважно вгору*/
+}
+li:only-child {
+  padding-top: 0px;
+}
+
+.tree li:first-child::before,
+.tree li:last-child::after {
+  border: 0 none; /* це прибирає стрілки в неіснуючі розвилки, ліво, право */
+}
+
+.tree li:first-child::after {
+  border-radius: 5px 0 0 0;
+  /* закругляшка */
+}
+.tree li:last-child::after {
+    border-right: 1px solid black;
+    border-radius: 0 5px 0 0;
+}

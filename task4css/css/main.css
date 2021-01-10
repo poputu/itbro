@@ -1,0 +1,66 @@
+* {
+  text-align: center;
+
+  text-align: center;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 25px;
+  font-style: oblique;
+}
+.map {
+  margin-left: 250px;
+  background-color: white;
+  overflow: auto;
+  height: 100vh;
+}
+.history {
+  padding-top: 200px;
+  background-color: darkorange;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+}
+.history a {
+  display: block;
+}
+.history a:hover {
+  font-size: 48px;
+  text-transform: uppercase;
+  color: red;
+}
+
+.map_element {
+  padding: 8%;
+  width: 100%;
+  height: 300px;
+  margin: 5px;
+}
+body {
+  background-color: white;
+}
+
+.map_element:nth-child(even) {
+  background-color:green;
+}
+.map_element:nth-child(odd) {
+  background-color:grey;
+}
+.less {
+  width: 49%;
+}
+.left {
+  float:left;
+}
+.right {
+  float:right;
+  margin-right: 0px;
+}
+.map_element:hover {
+  opacity: .3;
+  text-transform: uppercase;
+  color: red;
+}
+div:hover {
+
+}

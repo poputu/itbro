@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<!--Виконав Кобеляцький Олег-->
+<html lang="ua">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="static/main.css" rel="stylesheet">
+    <style>
+        #warning {
+            color: green;
+        }
+    </style>
+    <title>Дніпро-1</title>
+</head>
+
+<body>
+    <header class="un-header">
+        <h1 align="center" class="un-header-title">Дніпро-1</h1>
+        <br>
+        <div class="image" id="dnipro_logo">
+            <img align="right"
+                src="https://upload.wikimedia.org/wikipedia/commons/b/bd/%C2%ABDnipro-1%C2%BB_battalion_emblem.jpg"
+                alt="Не футбольний Клуб">
+        </div>
+        <nav class="un-nav">
+            <ul class="un-nav-list">
+                <li>
+                    <a href="#main-story">Початок</a>
+                </li>
+                <li>
+                    <a href="#un-path">Тернистий шлях</a>
+                </li>
+                <li>
+                    <a href="#contacts">Контакти</a>
+                </li>
+            </ul>
+        </nav>
+        <h3 class="un-title">Славетна історія створення Дніпро-1</h3>
+        <br>
+        <p class="un-text" id="main-story">
+            Як напали москалі в 2014 році славетні українці стали на захист України і пішли в Добробати, і деякі з
+            них
+            прийшли в Дніпро-1.
+            Брали всіх, бо і так не вистачало людей, тому не питайте як з таким пузом, чи як у 76 років, чи як без
+            довідки психіатра. Дякуючи Богу, гарному піару, а також небажанні ворогів помирати за ЗП ми вистояли.
+            Сам підрозділ створений в місті Дніпрі за сприяння того, чиє ім'я тепер не можна згадувати в позитивному
+            ключі, та силами українського патріотичного руху і навіть одного миколаївського Беркутівця.
+        </p>
+    </header>
+
+    <main role="main" id="un-unit">
+        <h3 class="un-title" class="un-main-title">
+            Шлях підрозділу Дніпро-1
+        </h3>
+        <div id="un-path">
+            <p class="un-text">Тернистий шлях підрозділу проліг через майже всю лінію розмежування, та
+                навіть трохи
+                глибче.
+                Пташки співають,що бачили наших бійців на кордоні міста Донецьку.
+                Але найбільше їх бачили в селі Піски, де вони славетно прикривали ДАП.
+            </p>
+            <p class="un-text">З часом сам підрозділ плавно перейшов з добровольчого статусу в статус поліцейського,
+                ба скажу більше - мєнтовського, хоча сам такого не помітив, в Дніпрі не живу,
+                а в зоні АТО буваю виключно в Луганській області, де птиць з Дніпра помітити важко.
+            </p>
+        </div>
+    </main>
+
+    <footer role="footer" class="un-footer">
+        <p id="warning" style="color:rgb(114, 6, 27);">
+            <span>
+                <small class="small-text">
+                    Якщо Ви той, хто вирішив приєднатись до лав славнозвісного полку Дніпро-1, то раджу Вам передумати і
+                    піти на контракт до армії, але якщо мене не слухати то їх контакти трохи нижче.</p>
+        </small>
+        </span>
+        </p>
+        <div id="contacts">
+            <h3 class="un-title" class="un-contacts-title">Контакти</h3>
+            <ul>
+                <li><a class="un-action" target="_blank" href="https://www.facebook.com/polk.dnipro1/">Facebook</a></li>
+                <li><a class="un-action" href="mailto:info@dnipro1.com.ua">Пошта</a></li>
+                <li><a class="un-action" href="mailto:dnipropolk2@gmail.com">Пошта</a></li>
+                <li><a class="un-action" target="_blank" href="http://dnipro1.com.ua/"><s>Сайт</s></a></li>
+                <li>телефон: +38 0672885951, +38 0669593463</li>
+            </ul>
+        </div>
+        <!--Початок форми по третьому тижню-->
+        <div class="join-form">
+            <p>Якщо Ви хочете вступити у наші ряди, заповніть форму</p>
+            <form id="join-form" name="join-form" action="/" method="POST">
+                <fieldset>
+                    <legend>П.І.П.</legend>
+                    Ім'я<br>
+                    <!--тут треба <label>? треба робити for для нього?-->
+                    <input type="text" name="fname" placeholder="Ім'я" required><br>
+                    Прізвище<br>
+                    <input type="text" name="lname" placeholder="Прізвище" required><br>
+                    День народнення<br>
+                    <input type="date" name="birthday" placeholder="День народнення" required><br>
+                    Стать<br>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Чоловіча</label><br>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Жіноча</label><br>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Інше</label>
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        Досвід
+                    </legend>
+                    <input type="checkbox" name="militaryXP" id="militaryXP">
+                    <label for="militaryXP">Служив в Армії</label><br>
+                    <input type="checkbox" name="warXP" id="warXP">
+                    <label for="warXP">Учасник АТО/ОСС</label><br>
+                    <input type="checkbox" name="playXP" id="playXP">
+                    <label for="playXP">Учасник військових ігор</label><br>
+                    <input type="checkbox" name="plastXP" id="plastXP">
+                    <label for="plastXP">Скаут (Пласт)</label><br>
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        Впевнений користувач:
+                    </legend>
+                    <input type="checkbox" name="pistol" id="pistol">
+                    <label for="pistol">Короткоствольна збоя</label>
+                    <input type="checkbox" name="rifle" id="rifle">
+                    <label for="rifle">Гвинтівка</label>
+                    <input type="checkbox" name="sniper" id="sniper">
+                    <!--А ну-ка бей-ка, кому не лень.
+                            Вам жизнь копейка, а мне мишень.
+                            Который в фетрах, давай на спор:
+                            Я - на сто метров, а ты - в упор.-->
+                    <label for="sniper">Снайперська зброя</label><br>
+                    <input type="checkbox" name="machinegun" id="machinegun">
+                    <label for="machinegun">Кулемет</label>
+                    <input type="checkbox" name="missile" id="missile">
+                    <label for="missile">Ручний гранатомет</label>
+                    <input type="checkbox" name="artillery" id="artillery">
+                    <label for="artillery">Артилерія</label>
+                    <input type="checkbox" name="tank" id="tank">
+                    <label for="tank">Танкіст</label><br>
+                    <input type="text" name="guns" id="guns" placeholder="Назва зброї, чи навички">
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        Бажана тривалість контракту
+                    </legend>
+                    <input type="number" name="dutitime" id="dutitime" placeholder="Бажана тривалість контракту"> років
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        Люди, які можуть Вас рекомендувати
+                    </legend>
+                    <input type="text" name="recomendations" id="recomendations" placeholder="Побратими">
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        Контактні данні
+                    </legend>
+                    Електронна пошта<br>
+                    <input type="email"><br>
+                    Телефон<br>
+                    <input type="tel" required><br>
+
+                </fieldset>
+                <input type="submit" value="Надіслати">
+                <input type="reset">
+
+
+
+
+            </form>
+        </div>
+    </footer>
+</body>
+
+</html>
