@@ -2,22 +2,11 @@ h1 {
   color: red;
 }
 
-.tree a {
-  display: inline-block;
-  text-decoration: none;
-
-  position: relative;
-  border: 1px solid grey;
-  border-radius: 5px;
-  padding: 4px;
-  margin: 4px;
-}
-
 .tree ul {
   position: relative;
   padding: 16px 0px;
   white-space: nowrap;
-  margin: auto;
+  margin: 0 auto;
   text-align: center;
 }
 .tree ul::after {
@@ -32,7 +21,7 @@ h1 {
   text-align: center;
   list-style-type: none;
   position: relative;
-  padding: 16px;
+  padding: 16px 8px 0px 8px;
 }
 .tree li::before,
 .tree li::after {
@@ -54,7 +43,7 @@ li:only-child::before {
   display: none; /* прибирає стрілки в нікуди, переважно вгору*/
 }
 li:only-child {
-  padding-top: 0px;
+  padding-top: 0;
 }
 
 .tree li:first-child::before,
@@ -62,11 +51,32 @@ li:only-child {
   border: 0 none; /* це прибирає стрілки в неіснуючі розвилки, ліво, право */
 }
 
-.tree li:first-child::after {
-  border-radius: 5px 0 0 0;
+.tree li:last-child::before {
+  border-right: 1px solid black;
+  border-radius: 0 5px 0 0;
   /* закругляшка */
 }
-.tree li:last-child::after {
-    border-right: 1px solid black;
-    border-radius: 0 5px 0 0;
+.tree li:first-child::after {
+  border-radius: 5px 0 0 0;
+}
+
+.tree ul ul::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  border-left: 1px solid black;
+  width: 0;
+  height: 16px;
+}
+
+.tree li a {
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 8px;
+  color: #333;
+  top: 1px;
 }
